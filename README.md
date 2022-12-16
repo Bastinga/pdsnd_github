@@ -5,7 +5,7 @@
 
 
 ### Description
-Evaluation of driving data from 3 cities
+Evaluation of driving data from 3 cities in the USA
 
 ### Files used
 bikeshare.py
