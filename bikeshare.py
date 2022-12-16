@@ -21,7 +21,7 @@ def get_filters():
         city = input("Select a city from {}, {} or {}:".format(*CITY_DATA.keys())).strip().lower()
         if city in CITY_DATA.keys():
             break
-            
+
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input("Enter the month you want to analyse (all, january, february, ... , june): ")
 
@@ -143,8 +143,13 @@ def user_stats(df):
     print('Count of user types: ', User_typ)
 
     # TO DO: Display counts of gender
-    gender = df['Gender'].value_counts()
-    print('Count of gender: ', gender)
+    try:
+        genders = df['Gender'].value_counts()
+        print("Gender:")
+        print(genders)
+        print()
+    except KeyError:
+        print("There isn't a [Gender] column in this spreedsheet!")
 
     # TO DO: Display earliest, most recent, and most common year of birth
     birth_min = df['Birth Year'].min()
