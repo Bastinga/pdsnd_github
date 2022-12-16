@@ -8,9 +8,10 @@
 Evaluation of driving data from 3 cities in the USA
 
 ### Files used
-bikeshare.py
-new_york_city.csv
-chicago.csv
+bikeshare.py 
+  
+new_york_city.csv  
+chicago.csv  
 washington.csv
 
 ### Credits
